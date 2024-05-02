@@ -32,10 +32,9 @@
     z-index: 1;
   }
 
-  /* Added CSS for hover effect on Proxy text */
   .proxy-text:hover {
-    color: rgb(176, 150, 201); /* Light purple color */
-    cursor: pointer; /* Change cursor to "link select" */
+    color: rgb(176, 150, 201);
+    cursor: pointer;
   }
 
   .version-text {
@@ -60,21 +59,21 @@
 
   .rounded-button {
     position: relative;
-    padding-left: 10px; /* Adjusted padding */
-    padding-right: 10px; /* Adjusted padding */
-    width: 80px; /* Adjusted width */
-    height: 30px; /* Adjusted height */
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 80px;
+    height: 30px;
     border-radius: 15px;
     background-color: rgb(10, 10, 10);
     color: white;
-    font-family: 'CustomFont', sans-serif; /* Added font-family */
+    font-family: 'CustomFont', sans-serif;
     font-size: 14px;
     border: 1px solid white;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 10px; /* Adjusted margin */
+    margin-right: 10px;
   }
 
   .rounded-button:hover {
@@ -107,25 +106,6 @@
     border-radius: 0 0 5px 0;
   }
 
-  .top-box {
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 301px;
-    height: 120px;
-    border: 0.8px solid rgba(255, 255, 255, 0.8);
-    background-color: transparent;
-    color: white;
-    border-radius: 7px 7px 0 0;
-    font-family: 'CustomFont', sans-serif;
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px;
-  }
-
   .changelog-text {
     margin-bottom: 5px;
   }
@@ -136,68 +116,65 @@
     font-family: 'CustomFont', sans-serif;
   }
 
-  /* Centered Proxy text */
   .center-text {
     position: absolute;
     top: 36%;
     left: 47%;
     transform: translate(-50%, -50%);
-    font-family: 'QGYyz_MVcBeNP4NjuGObqx1XmO1I4TC0O4i0ExAo', sans-serif; /* Added font-family */
-    font-size: 76px; /* Increased font size */
-    font-weight: bold; /* Bold font */
+    font-family: 'QGYyz_MVcBeNP4NjuGObqx1XmO1I4TC0O4i0ExAo', sans-serif;
+    font-size: 76px;
+    font-weight: bold;
     color: white;
   }
   
-  /* Added CSS for additional V1.0 text */
   .additional-version-text {
     font-family: 'CustomFont', sans-serif;
     font-size: 47px;
     color: transparent;
-    font-weight: bold; /* Bold font */
+    font-weight: bold;
     position: absolute;
-    left: 55.8%; /* Adjusted position */
+    left: 55.8%;
     top: 37%;
     transform: translate(-50%, -50%);
-    background-image: url('222w.gif'); /* Set background image */
-    background-size: cover; /* Make sure the image covers the text */
-    -webkit-background-clip: text; /* Clip text to the background */
-    background-clip: text; /* Clip text to the background */
-    animation: animate 2s infinite; /* Add animation */
+    background-image: url('222w.gif');
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: animate 2s infinite;
   }
 
   @keyframes animate {
     0% {
-      background-position: 0 0; /* Initial position */
+      background-position: 0 0;
     }
     100% {
-      background-position: 100% 0; /* Final position */
+      background-position: 100% 0;
     }
   }
 
-  /* New CSS for the centered button */
   .centered-button {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'QGYyz_MVcBeNP4NjuGObqx1XmO1I4TC0O4i0ExAo', sans-serif; /* Added font-family */
-    width: 140px; /* Adjusted width */
-    height: 40px; /* Adjusted height */
-    border-radius: 9px; /* Added border radius */
-    border: 1px solid rgba(255, 255, 255, 0.5); /* Transparent white border */
-    background-image: url('purple_anim.gif'); /* Set background image */
-    background-size: cover; /* Make sure the image covers the button */
-    color: white; /* Text color */
-    font-size: 16px; /* Text size */
-    font-weight: bold; /* Text weight */
-    text-align: center; /* Center align text */
-    line-height: 40px; /* Center align vertically */
-    cursor: pointer; /* Change cursor on hover */
-    transition: background-color 0.3s ease; /* Add transition effect */
+    font-family: 'QGYyz_MVcBeNP4NjuGObqx1XmO1I4TC0O4i0ExAo', sans-serif;
+    width: 140px;
+    height: 40px;
+    border-radius: 9px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-image: url('purple_anim.gif');
+    background-size: cover;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
   }
 
   .centered-button:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Lighter background color on hover */
+    background-color: rgba(255, 255, 255, 0.2);
   }
 </style>
 </head>
@@ -206,41 +183,25 @@
 <header>
   <div class="proxy-text">Proxy</div>
   <div class="version-text">V1.0</div>
-  <!-- Rounded button container -->
   <div class="rounded-button-container">
-    <!-- Rounded button with icon -->
     <div class="rounded-button" onclick="window.open('https://discord.gg/sxSMqSxR', '_blank')">
       Discord
     </div>
-    <!-- Cloned Discord button with font style applied -->
     <div class="rounded-button" onclick="window.location.href='https://proxyy.sellpass.io/'">
       Purchase
     </div>
   </div>
 </header>
 
-<!-- Singular box on top -->
-<div class="top-box">
-  <div class="changelog-text">Changelog</div>
-  <div class="changelog-content">
-    [+] Hella Configs<br>
-    [+] Cheap<br>
-    [+] Daily Upd's<br>
-  </div>
-</div>
-
 <div class="box-container">
   <div class="box but1">1k+ Configs</div>
   <div class="box but2">Cheap</div>
 </div>
 
-<!-- Centered "Proxy" text -->
 <div class="center-text">Proxy</div>
 
-<!-- Additional V1.0 text -->
 <div class="additional-version-text">V1.0</div>
 
-<!-- Centered button -->
 <div class="centered-button" onclick="window.location.href='https://proxyy.sellpass.io/'">Purchase</div>
 
 </body>
